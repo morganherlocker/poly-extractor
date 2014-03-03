@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/morganherlocker/poly-extractor/issues"
   },
-  "homepage": "https://github.com/morganherlocker/poly-extractor"
+  "homepage": "https://github.com/morganherlocker/poly-extractor",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
 }
