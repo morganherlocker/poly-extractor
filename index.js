@@ -11,12 +11,30 @@ module.exports = function(fc){
       _(feature.geometry.coordinates).each(function(polyCoords){
         var poly = _(polyTemplate).cloneDeep()
         poly.geometry.coordinates = polyCoords
+        poly.properties = feature.properties
         polys.features.push(poly)
       })
     }
     else if(feature.geometry.type === 'GeometryCollection'){
       _(feature.geometries).each(function(geometry){
-
+        if(geometry.type === 'Polygon'){
+          var poly = _(polyTemplate).cloneDeep()
+          poly.geometry = geometry
+          poly.properties = feature.properties
+          polys.features.push(poly)
+        }
+        else if(geometry.type === 'MultiPolygon'){
+          _(geometry.coordinates).each(function(polyCoords){
+            var poly = _(polyTemplate).cloneDeep()
+            poly.geometry = {
+              type: 'Polygon',
+              coordinates: []
+            }
+            poly.properties = feature.properties
+            poly.geometry.coordinates = polyCoords
+            polys.features.push(poly)
+          })
+        }
       })
     }
   })
