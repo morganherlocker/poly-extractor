@@ -1,5 +1,5 @@
 {
-  "name": "arc-poly",
+  "name": "poly-extractor",
   "version": "0.0.0",
   "description": "takes valid geojson multipolygons and denormalizes them into polygons for use with arcgis js ",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/morganherlocker/arc-poly.git"
+    "url": "https://github.com/morganherlocker/poly-extractor.git"
   },
   "keywords": [
     "geo",
@@ -20,7 +20,7 @@
   "author": "morganherlocker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/morganherlocker/arc-poly/issues"
+    "url": "https://github.com/morganherlocker/poly-extractor/issues"
   },
-  "homepage": "https://github.com/morganherlocker/arc-poly"
+  "homepage": "https://github.com/morganherlocker/poly-extractor"
 }

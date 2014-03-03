@@ -1,4 +1,4 @@
-arc-poly
+poly-extractor
 ========
 
-takes valid geojson multipolygons and denormalizes them into polygons for use with arcgis js
+extracts all of the polygons out of a geojson feature
