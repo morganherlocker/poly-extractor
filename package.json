@@ -1,0 +1,26 @@
+{
+  "name": "arc-poly",
+  "version": "0.0.0",
+  "description": "takes valid geojson multipolygons and denormalizes them into polygons for use with arcgis js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morganherlocker/arc-poly.git"
+  },
+  "keywords": [
+    "geo",
+    "arcgis",
+    "geojson",
+    "polygon",
+    "multipolygon"
+  ],
+  "author": "morganherlocker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morganherlocker/arc-poly/issues"
+  },
+  "homepage": "https://github.com/morganherlocker/arc-poly"
+}
