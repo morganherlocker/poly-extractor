@@ -1,6 +1,8 @@
 poly-extractor
 ========
 
+[![Build Status](https://travis-ci.org/morganherlocker/poly-extractor.png?branch=master)](https://travis-ci.org/morganherlocker/poly-extractor)
+
 extracts all of the polygons out of a geojson FeatureCollection
 
 ###Install
