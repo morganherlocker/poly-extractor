@@ -10,7 +10,7 @@ npm install poly-extractor
 
 ###Usage
 
-```
+```js
 var extractor = require('poly-extractor')
 
 var fc = JSON.parse(fs.readFileSync('./FC.geojson'))
